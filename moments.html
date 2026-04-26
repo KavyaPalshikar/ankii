@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sorry ankii</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-left"></div>
+    <div class="page-glow page-glow-right"></div>
+    <div class="texture"></div>
+    <div class="floating-hearts" aria-hidden="true">
+      <span>press the moments below</span>
+      <span>hidden feelings</span>
+      <span>soft truths</span>
+      <span>for boondi</span>
+      <span>my heart speaks</span>
+      <span>ankii</span>
+    </div>
+    <div class="heart-rain" id="heartRain" aria-hidden="true"></div>
+    <div class="love-burst-layer" id="loveBurstLayer" aria-hidden="true"></div>
+
+    <main class="subpage-main">
+      <section class="subpage-hero reveal">
+        <p class="eyebrow">page three</p>
+        <h1>Press The Moments Below</h1>
+        <p class="hero-message">
+          Every button opens a different hidden feeling, like small pieces of everything
+          I wish I had said the right way.
+        </p>
+      </section>
+
+      <section class="promise-section reveal">
+        <div class="promise-panel">
+          <div class="button-cluster">
+            <button
+              class="chip-btn"
+              data-title="The truth I should have said first"
+              data-message="I should have trusted your heart with the truth immediately. You never should have had to discover the honesty was missing."
+              data-theme="rose"
+            >
+              Open the truth
+            </button>
+            <button
+              class="chip-btn"
+              data-title="What your silence taught me"
+              data-message="Your silence made me feel the distance my lie created. It taught me how fragile warmth becomes when trust is shaken."
+              data-theme="gold"
+            >
+              Open the silence
+            </button>
+            <button
+              class="chip-btn"
+              data-title="If you ever give me one chance"
+              data-message="I will try to rebuild this gently, with real honesty and patience, instead of asking for forgiveness faster than I deserve."
+              data-theme="pearl"
+            >
+              Open the promise
+            </button>
+            <button
+              class="chip-btn"
+              data-title="What I still admire about you"
+              data-message="Even your anger has sincerity in it. It comes from being genuine, and that honesty in you is something I treasure deeply."
+              data-theme="blush"
+            >
+              Open what I admire
+            </button>
+          </div>
+          <div class="live-message" id="liveMessage">
+            Press a button and let one hidden feeling bloom.
+          </div>
+        </div>
+      </section>
+
+      <div class="page-nav reveal">
+        <a class="btn page-link nav-btn finale-btn" href="finale.html" data-burst="last feeling">Go to one last feeling</a>
+      </div>
+    </main>
+
+    <div class="message-bloom" id="messageBloom" aria-hidden="true">
+      <div class="bloom-backdrop" id="bloomBackdrop"></div>
+      <div class="bloom-card" id="bloomCard">
+        <button class="bloom-close" id="bloomClose" aria-label="Close message">Close</button>
+        <p class="bloom-kicker">for ankii</p>
+        <h3 id="bloomTitle">A small truth</h3>
+        <p id="bloomBody">The message will appear here when you press one of the buttons.</p>
+      </div>
+    </div>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-text-layer" id="cursorTextLayer" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
