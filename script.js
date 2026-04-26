@@ -301,19 +301,15 @@ setInterval(spawnRainHeart, 360);
 
 function spawnTrail(x, y) {
   if (prefersCoarsePointer) {
-    const charms = ["❤", "♥", "🍣", "🍙", "🍱"];
-    const charm = document.createElement("span");
-    charm.className = "cursor-charm";
-    charm.textContent = charms[Math.floor(Math.random() * charms.length)];
-    charm.style.left = `${x}px`;
-    charm.style.top = `${y}px`;
-    charm.style.setProperty("--dx", `${(Math.random() - 0.5) * 26}px`);
-    charm.style.setProperty("--dy", `${-24 - Math.random() * 44}px`);
-    charm.style.setProperty("--spin", `${-22 + Math.random() * 44}deg`);
-    cursorTextLayer.appendChild(charm);
+    const word = document.createElement("span");
+    word.className = "cursor-word";
+    word.textContent = "sorry ankii";
+    word.style.left = `${x}px`;
+    word.style.top = `${y}px`;
+    cursorTextLayer.appendChild(word);
 
     setTimeout(() => {
-      charm.remove();
+      word.remove();
     }, 1300);
     return;
   }
